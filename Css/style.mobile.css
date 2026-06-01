@@ -1,0 +1,90 @@
+/*© Zero - Código libre no comercial*/
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  /* IMPORTANTE */
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: #fcfcfc;
+}
+
+.dedication-text {
+  position: relative;
+
+  margin: 30px auto 0 auto;
+
+  width: 90%;
+  max-width: 900px;
+
+  font-size: 1.05rem;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-line;
+
+  padding: 20px;
+  border-radius: 12px;
+
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+
+  /* QUITAR SCROLL */
+  max-height: none;
+  overflow: visible;
+}
+.dedication-text.typing {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tree-container {
+  width: 92vw !important;
+  height: 62vw !important;
+  max-width: 98vw;
+  max-height: 80vw;
+  min-width: 180px;
+  min-height: 180px;
+
+  position: relative;
+  margin: 30px auto;
+
+  left: auto;
+  top: auto;
+  transform: none;
+
+  z-index: 2;
+}
+
+.countdown {
+  position: relative;
+  margin: 30px auto;
+  left: auto;
+  bottom: auto;
+  transform: none;
+
+  font-size: 0.98rem;
+  min-width: 60vw;
+  max-width: 92vw;
+  text-align: center;
+  padding: 0.5em 0.7em;
+  border-radius: 1em;
+  background: #ffffff;
+  box-shadow: 0 2px 8px #e6002611;
+  z-index: 6;
+
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.countdown.visible {
+  opacity: 1;
+}
+.signature.visible {
+  opacity: 1;
+}
